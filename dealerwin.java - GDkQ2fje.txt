@@ -1,0 +1,6 @@
+boolean dealerWins() {
+    for(Player player : players)
+        if (player.beats(dealer))
+            return false;
+    return true;
+}

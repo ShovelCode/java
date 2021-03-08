@@ -1,0 +1,51 @@
+//Christopher Ray
+//COSC 2430.001
+//Project #1
+//Due Date: 2/4/2015
+//This program takes two values for input, one an initial investment and the other
+//interest on that investment.  Then the program will output the value of that
+//investment for 5, 10, and 20 years.
+
+import java.util.*;
+import java.math.*;
+
+class Investments{
+
+   public static void main( String[]args ){
+      
+      double interestRate;
+      double investment;
+      double fiveYearValue;
+      double tenYearValue;
+      double twentyYearValue;
+
+      interestRate    = 0.0;
+      investment      = 0.0;
+      fiveYearValue   = 0.0;
+      tenYearValue    = 0.0;
+      twentyYearValue = 0.0;
+
+      Scanner NumScan = new Scanner( System.in );
+      
+      System.out.print( "Enter an initial investment, and the interest rate: " );
+      investment   = NumScan.nextDouble();
+      interestRate = NumScan.nextDouble();
+
+      fiveYearValue   = investment * Math.pow( ( 1 + interestRate ), 5  );
+      tenYearValue    = investment * Math.pow( ( 1 + interestRate ), 10 );
+      twentyYearValue = investment * Math.pow( ( 1 + interestRate ), 20 );
+
+      System.out.println();
+      System.out.print( "Investment: $" );
+      System.out.printf( "%.2f", investment );
+      System.out.print( "\tInterest Rate: " );
+      System.out.printf( "%.3f", interestRate );
+      System.out.println();
+
+      System.out.printf( "Value after five years:   $%.2f\n",   fiveYearValue );
+      System.out.printf( "Value after ten years:    $%.2f\n",    tenYearValue );
+      System.out.printf( "Value after twenty years: $%.2f\n", twentyYearValue );
+      System.out.println();
+
+   } //end main method
+} //end Investments class
