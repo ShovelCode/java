@@ -1,0 +1,13 @@
+//Hello Harrison!
+
+class calendarDate {
+
+public static void main(String[]args){
+
+Scanner in = new Scanner(System.in);
+
+String enterDate = "Month? ";
+
+String month = in.next();
+}//end main
+}//end class calendarDate

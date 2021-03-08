@@ -1,0 +1,43 @@
+    //Class for drawing simple shapes on the screen
+    //using keyboard characters.  This class will
+    //draw an asterisk on the screen as a test.
+    //It is not intended to create a "real" shape
+    //but rather to be used as a base class for
+    //other classes of shapes
+     
+    public class ShapeBasics implements ShapeInterface{
+        private int offset;
+       
+        public ShapeBasics(){
+            offset = 0;
+        }//end method ShapeBasics
+       
+        public ShapeBasics(int theOffset){
+            offset = theOffset;
+        }//end method ShapeBasics(int)
+       
+        public void setOffset(int newOffset){
+            offset = newOffset;
+        }//end method setOffset
+       
+        public int getOffset(){
+            return offset;
+        }//end method getOffset
+       
+        //draws the shape at lineNumber lines down
+        //from the current line
+       
+        public void drawAt(int lineNumber){
+            for(int count = 0; count < lineNumber; count++)
+                System.out.println();
+            drawHere();
+        }//end method drawAt(int)
+       
+        //draws the sahpe at the current line
+        public void drawHere(){
+            for(int count = 0; count < offset; count++)
+                System.out.print('');
+               System.out.println('*');
+        }//end method drawHere
+       
+    }//end class ShapeBasics
