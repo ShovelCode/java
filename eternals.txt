@@ -1,0 +1,15 @@
+ArrayList
+LinkedList
+Stack
+Vector
+TreeSet
+LinkedHashSet
+HashSet
+HashMap
+TreeMap
+Thread
+
+Apex (Salesforce) eternals:
+Map
+Set
+List
