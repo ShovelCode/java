@@ -1,0 +1,4 @@
+javac -proc:none HelloWorld.java
+
+  After a class file is produced, run it with
+java HelloWorld
